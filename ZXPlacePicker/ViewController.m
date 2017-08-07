@@ -1,12 +1,13 @@
 //
-//  ViewController.m
-//  ZXPlacePicker
+// ViewController.m
+// ZXPlacePicker
 //
-//  Created by ziv on 2017/8/7.
-//  Copyright © 2017年 ziv. All rights reserved.
+// Created by ziv on 2017/7/14.
+// Copyright © 2017年 ziv. All rights reserved.
 //
 
 #import "ViewController.h"
+#import "ZXPlacePickerViewController.h"
 
 @interface ViewController ()
 
@@ -15,15 +16,13 @@
 @implementation ViewController
 
 - (void)viewDidLoad {
-    [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+	[super viewDidLoad];
+	// Do any additional setup after loading the view, typically from a nib.
 }
 
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (IBAction)pushToPlacePickerViewController:(UIButton *)sender {
+	ZXPlacePickerViewController *viewController = [[ZXPlacePickerViewController alloc] init];
+	[self.navigationController pushViewController:viewController animated:YES];
 }
-
 
 @end

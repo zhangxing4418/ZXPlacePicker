@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ZXPlacePickerViewController">
+            <connections>
+                <outlet property="activityIndicator" destination="AZd-I5-ml4" id="Zpg-U2-Teh"/>
+                <outlet property="floatStickView" destination="bD7-js-V8b" id="xei-D2-ShI"/>
+                <outlet property="floatView" destination="2Ya-4B-Zbt" id="8Js-Gu-Wmy"/>
+                <outlet property="floatViewHeightConstraint" destination="Rr0-zG-Kdt" id="5ex-kj-8S9"/>
+                <outlet property="floatViewTopConstraint" destination="Tz4-e3-61q" id="zo9-D8-jdh"/>
+                <outlet property="locationView" destination="1dU-iU-Kd1" id="Rl9-iw-ZGc"/>
+                <outlet property="mapView" destination="SDe-38-R1B" id="4Hc-YM-Pqf"/>
+                <outlet property="tableView" destination="7Qn-sz-zlg" id="ppP-xU-FvT"/>
+                <outlet property="userTrackingButton" destination="D08-5H-vhB" id="sff-jF-lWZ"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SDe-38-R1B">
+                    <rect key="frame" x="0.0" y="44" width="320" height="276"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="KFK-Pu-SOo"/>
+                    </connections>
+                </mapView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2Ya-4B-Zbt">
+                    <rect key="frame" x="0.0" y="320" width="320" height="504"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bD7-js-V8b">
+                            <rect key="frame" x="145" y="5" width="30" height="5"/>
+                            <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="30" id="T8U-gf-wfH"/>
+                                <constraint firstAttribute="height" constant="5" id="mC9-df-e61"/>
+                            </constraints>
+                        </view>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" style="plain" separatorStyle="default" allowsSelectionDuringEditing="YES" allowsMultipleSelectionDuringEditing="YES" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="7Qn-sz-zlg">
+                            <rect key="frame" x="0.0" y="10" width="320" height="494"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <connections>
+                                <outlet property="dataSource" destination="-1" id="HGV-N8-IcC"/>
+                                <outlet property="delegate" destination="-1" id="MAd-OE-WAP"/>
+                            </connections>
+                        </tableView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <gestureRecognizers/>
+                    <constraints>
+                        <constraint firstItem="bD7-js-V8b" firstAttribute="top" secondItem="2Ya-4B-Zbt" secondAttribute="top" constant="5" id="2HZ-F7-4Ae"/>
+                        <constraint firstAttribute="height" constant="504" id="Rr0-zG-Kdt"/>
+                        <constraint firstAttribute="bottom" secondItem="7Qn-sz-zlg" secondAttribute="bottom" id="UCI-MS-UkA"/>
+                        <constraint firstItem="bD7-js-V8b" firstAttribute="centerX" secondItem="2Ya-4B-Zbt" secondAttribute="centerX" id="Ual-8r-70x"/>
+                        <constraint firstItem="7Qn-sz-zlg" firstAttribute="top" secondItem="bD7-js-V8b" secondAttribute="bottom" id="YlN-qg-YH6"/>
+                        <constraint firstItem="7Qn-sz-zlg" firstAttribute="leading" secondItem="2Ya-4B-Zbt" secondAttribute="leading" id="eNF-3S-MX7"/>
+                        <constraint firstItem="7Qn-sz-zlg" firstAttribute="centerX" secondItem="2Ya-4B-Zbt" secondAttribute="centerX" id="fXX-Zv-4tA"/>
+                    </constraints>
+                    <connections>
+                        <outletCollection property="gestureRecognizers" destination="zXM-jr-mYe" appends="YES" id="6Ls-xk-DfY"/>
+                        <outletCollection property="gestureRecognizers" destination="uWQ-nK-YMW" appends="YES" id="ZeD-3S-yxh"/>
+                    </connections>
+                </view>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_pin" translatesAutoresizingMaskIntoConstraints="NO" id="1dU-iU-Kd1">
+                    <rect key="frame" x="148" y="134" width="24" height="48"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="1dU-iU-Kd1" secondAttribute="height" multiplier="1:2" id="Wjj-xY-0cx"/>
+                        <constraint firstAttribute="width" constant="24" id="o0X-kT-XUk"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D08-5H-vhB">
+                    <rect key="frame" x="282" y="275" width="30" height="30"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="YII-hl-alE"/>
+                        <constraint firstAttribute="width" secondItem="D08-5H-vhB" secondAttribute="height" id="mIU-EF-sEu"/>
+                    </constraints>
+                    <connections>
+                        <action selector="changeUserTrackingMode:" destination="-1" eventType="touchUpInside" id="10r-tW-iRF"/>
+                    </connections>
+                </button>
+                <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="AZd-I5-ml4">
+                    <rect key="frame" x="150" y="340" width="20" height="20"/>
+                </activityIndicatorView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <gestureRecognizers/>
+            <constraints>
+                <constraint firstItem="2Ya-4B-Zbt" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="0RF-lY-AYK"/>
+                <constraint firstItem="AZd-I5-ml4" firstAttribute="top" secondItem="SDe-38-R1B" secondAttribute="bottom" constant="20" id="0m2-JT-e0m"/>
+                <constraint firstItem="2Ya-4B-Zbt" firstAttribute="top" secondItem="D08-5H-vhB" secondAttribute="bottom" constant="15" id="Fgo-um-lTc"/>
+                <constraint firstAttribute="trailing" secondItem="D08-5H-vhB" secondAttribute="trailing" constant="8" id="GLF-Bc-G5k"/>
+                <constraint firstItem="AZd-I5-ml4" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="QiI-hQ-PpY"/>
+                <constraint firstItem="2Ya-4B-Zbt" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="320" id="Tz4-e3-61q"/>
+                <constraint firstItem="1dU-iU-Kd1" firstAttribute="centerX" secondItem="SDe-38-R1B" secondAttribute="centerX" id="gAW-8w-zYH"/>
+                <constraint firstItem="2Ya-4B-Zbt" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="h2W-QF-lKo"/>
+                <constraint firstItem="SDe-38-R1B" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="44" id="hbZ-uf-6sh"/>
+                <constraint firstItem="SDe-38-R1B" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="ifR-JI-hhL"/>
+                <constraint firstItem="1dU-iU-Kd1" firstAttribute="centerY" secondItem="SDe-38-R1B" secondAttribute="centerY" constant="-24" id="meu-fP-54m"/>
+                <constraint firstItem="2Ya-4B-Zbt" firstAttribute="top" secondItem="SDe-38-R1B" secondAttribute="bottom" id="rG9-Mo-5NZ"/>
+                <constraint firstItem="SDe-38-R1B" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="uxM-eg-nug"/>
+            </constraints>
+            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+            <point key="canvasLocation" x="292" y="34"/>
+        </view>
+        <swipeGestureRecognizer direction="up" id="zXM-jr-mYe">
+            <connections>
+                <action selector="swipeFloatView:" destination="-1" id="nlW-Jb-wLt"/>
+            </connections>
+        </swipeGestureRecognizer>
+        <swipeGestureRecognizer direction="down" id="uWQ-nK-YMW">
+            <connections>
+                <action selector="swipeFloatView:" destination="-1" id="ad8-SO-aGf"/>
+            </connections>
+        </swipeGestureRecognizer>
+    </objects>
+    <resources>
+        <image name="icon_pin" width="25" height="48"/>
+    </resources>
+</document>

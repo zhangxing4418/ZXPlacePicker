@@ -7,88 +7,239 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4C94AD1F1F380C54005AE554 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C94AD1E1F380C54005AE554 /* main.m */; };
-		4C94AD221F380C54005AE554 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C94AD211F380C54005AE554 /* AppDelegate.m */; };
-		4C94AD251F380C54005AE554 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C94AD241F380C54005AE554 /* ViewController.m */; };
-		4C94AD281F380C54005AE554 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C94AD261F380C54005AE554 /* Main.storyboard */; };
-		4C94AD2A1F380C54005AE554 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C94AD291F380C54005AE554 /* Assets.xcassets */; };
-		4C94AD2D1F380C54005AE554 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C94AD2B1F380C54005AE554 /* LaunchScreen.storyboard */; };
+		4C08DBB41F18C4C9008C9588 /* ZXPlacePickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C08DBB21F18C4C9008C9588 /* ZXPlacePickerViewController.m */; };
+		4C08DBB51F18C4C9008C9588 /* ZXPlacePickerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C08DBB31F18C4C9008C9588 /* ZXPlacePickerViewController.xib */; };
+		4C08DBB91F18C817008C9588 /* UIToolkit.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C08DBB81F18C817008C9588 /* UIToolkit.m */; };
+		4C08DBCD1F18C8E6008C9588 /* ArrayUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C08DBBC1F18C8E6008C9588 /* ArrayUtils.m */; };
+		4C08DBCE1F18C8E6008C9588 /* RandomStringUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C08DBBF1F18C8E6008C9588 /* RandomStringUtils.m */; };
+		4C08DBD01F18C8E6008C9588 /* StringUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C08DBC31F18C8E6008C9588 /* StringUtils.m */; };
+		4C08DBD11F18C8E6008C9588 /* SystemUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C08DBC51F18C8E6008C9588 /* SystemUtils.m */; };
+		4C08DBD21F18C8E6008C9588 /* DateFormatUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C08DBC81F18C8E6008C9588 /* DateFormatUtils.m */; };
+		4C08DBD31F18C8E6008C9588 /* DateUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C08DBCA1F18C8E6008C9588 /* DateUtils.m */; };
+		4C08DBD41F18C8E6008C9588 /* FastDateFormat.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C08DBCC1F18C8E6008C9588 /* FastDateFormat.m */; };
+		4C08DBDA1F18CCA7008C9588 /* UIConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C08DBD91F18CCA7008C9588 /* UIConstants.m */; };
+		4C08DBDD1F18D073008C9588 /* DrawUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C08DBDC1F18D073008C9588 /* DrawUtils.m */; };
+		4C08DBE01F18D2B2008C9588 /* UIColor+Crayons.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C08DBDF1F18D2B2008C9588 /* UIColor+Crayons.m */; };
+		4C22BE031F2AD09800EB2988 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C22BE021F2AD09800EB2988 /* MapKit.framework */; };
+		4C2633CA1F2ED29700EDAB2B /* GoogleNearbySearchResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C2633C91F2ED29700EDAB2B /* GoogleNearbySearchResult.m */; };
+		4C2633CE1F2ED59400EDAB2B /* GoogleAPIWebService.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C2633CD1F2ED59400EDAB2B /* GoogleAPIWebService.m */; };
+		4C2633D11F2ED6CB00EDAB2B /* GoogleNearbySearchResultJsonMapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C2633D01F2ED6CB00EDAB2B /* GoogleNearbySearchResultJsonMapper.m */; };
+		4C9AB3291F18AD260016B661 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C9AB3281F18AD260016B661 /* main.m */; };
+		4C9AB32C1F18AD260016B661 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C9AB32B1F18AD260016B661 /* AppDelegate.m */; };
+		4C9AB32F1F18AD260016B661 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C9AB32E1F18AD260016B661 /* ViewController.m */; };
+		4C9AB3321F18AD260016B661 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C9AB3301F18AD260016B661 /* Main.storyboard */; };
+		4C9AB3341F18AD260016B661 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C9AB3331F18AD260016B661 /* Assets.xcassets */; };
+		4C9AB3371F18AD260016B661 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C9AB3351F18AD260016B661 /* LaunchScreen.storyboard */; };
+		96CF722C64CCF0A97B5B9852 /* Pods_ZXPlacePicker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D51A04278CD93B0CD0A8765E /* Pods_ZXPlacePicker.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		4C94AD1A1F380C54005AE554 /* ZXPlacePicker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZXPlacePicker.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		4C94AD1E1F380C54005AE554 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		4C94AD201F380C54005AE554 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		4C94AD211F380C54005AE554 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		4C94AD231F380C54005AE554 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		4C94AD241F380C54005AE554 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		4C94AD271F380C54005AE554 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		4C94AD291F380C54005AE554 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		4C94AD2C1F380C54005AE554 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		4C94AD2E1F380C54005AE554 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3B22F410347DDBC43BCC8AC5 /* Pods-ZXPlacePicker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZXPlacePicker.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZXPlacePicker/Pods-ZXPlacePicker.debug.xcconfig"; sourceTree = "<group>"; };
+		4C08DBB11F18C4C9008C9588 /* ZXPlacePickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZXPlacePickerViewController.h; sourceTree = "<group>"; };
+		4C08DBB21F18C4C9008C9588 /* ZXPlacePickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZXPlacePickerViewController.m; sourceTree = "<group>"; };
+		4C08DBB31F18C4C9008C9588 /* ZXPlacePickerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZXPlacePickerViewController.xib; sourceTree = "<group>"; };
+		4C08DBB71F18C817008C9588 /* UIToolkit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIToolkit.h; sourceTree = "<group>"; };
+		4C08DBB81F18C817008C9588 /* UIToolkit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIToolkit.m; sourceTree = "<group>"; };
+		4C08DBBB1F18C8E6008C9588 /* ArrayUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArrayUtils.h; sourceTree = "<group>"; };
+		4C08DBBC1F18C8E6008C9588 /* ArrayUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArrayUtils.m; sourceTree = "<group>"; };
+		4C08DBBD1F18C8E6008C9588 /* Lang.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Lang.h; sourceTree = "<group>"; };
+		4C08DBBE1F18C8E6008C9588 /* RandomStringUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RandomStringUtils.h; sourceTree = "<group>"; };
+		4C08DBBF1F18C8E6008C9588 /* RandomStringUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RandomStringUtils.m; sourceTree = "<group>"; };
+		4C08DBC21F18C8E6008C9588 /* StringUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StringUtils.h; sourceTree = "<group>"; };
+		4C08DBC31F18C8E6008C9588 /* StringUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StringUtils.m; sourceTree = "<group>"; };
+		4C08DBC41F18C8E6008C9588 /* SystemUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SystemUtils.h; sourceTree = "<group>"; };
+		4C08DBC51F18C8E6008C9588 /* SystemUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SystemUtils.m; sourceTree = "<group>"; };
+		4C08DBC71F18C8E6008C9588 /* DateFormatUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DateFormatUtils.h; sourceTree = "<group>"; };
+		4C08DBC81F18C8E6008C9588 /* DateFormatUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DateFormatUtils.m; sourceTree = "<group>"; };
+		4C08DBC91F18C8E6008C9588 /* DateUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DateUtils.h; sourceTree = "<group>"; };
+		4C08DBCA1F18C8E6008C9588 /* DateUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DateUtils.m; sourceTree = "<group>"; };
+		4C08DBCB1F18C8E6008C9588 /* FastDateFormat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FastDateFormat.h; sourceTree = "<group>"; };
+		4C08DBCC1F18C8E6008C9588 /* FastDateFormat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FastDateFormat.m; sourceTree = "<group>"; };
+		4C08DBD81F18CCA7008C9588 /* UIConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIConstants.h; sourceTree = "<group>"; };
+		4C08DBD91F18CCA7008C9588 /* UIConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIConstants.m; sourceTree = "<group>"; };
+		4C08DBDB1F18D073008C9588 /* DrawUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawUtils.h; sourceTree = "<group>"; };
+		4C08DBDC1F18D073008C9588 /* DrawUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrawUtils.m; sourceTree = "<group>"; };
+		4C08DBDE1F18D2B2008C9588 /* UIColor+Crayons.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Crayons.h"; sourceTree = "<group>"; };
+		4C08DBDF1F18D2B2008C9588 /* UIColor+Crayons.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Crayons.m"; sourceTree = "<group>"; };
+		4C22BE021F2AD09800EB2988 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		4C2633C81F2ED29700EDAB2B /* GoogleNearbySearchResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoogleNearbySearchResult.h; sourceTree = "<group>"; };
+		4C2633C91F2ED29700EDAB2B /* GoogleNearbySearchResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GoogleNearbySearchResult.m; sourceTree = "<group>"; };
+		4C2633CC1F2ED59400EDAB2B /* GoogleAPIWebService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoogleAPIWebService.h; sourceTree = "<group>"; };
+		4C2633CD1F2ED59400EDAB2B /* GoogleAPIWebService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GoogleAPIWebService.m; sourceTree = "<group>"; };
+		4C2633CF1F2ED6CB00EDAB2B /* GoogleNearbySearchResultJsonMapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoogleNearbySearchResultJsonMapper.h; sourceTree = "<group>"; };
+		4C2633D01F2ED6CB00EDAB2B /* GoogleNearbySearchResultJsonMapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GoogleNearbySearchResultJsonMapper.m; sourceTree = "<group>"; };
+		4C9AB3241F18AD260016B661 /* ZXPlacePicker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZXPlacePicker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C9AB3281F18AD260016B661 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4C9AB32A1F18AD260016B661 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		4C9AB32B1F18AD260016B661 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		4C9AB32D1F18AD260016B661 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		4C9AB32E1F18AD260016B661 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		4C9AB3311F18AD260016B661 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4C9AB3331F18AD260016B661 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4C9AB3361F18AD260016B661 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4C9AB3381F18AD260016B661 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8FB11C7BAD27F737B4D15A4B /* Pods-ZXPlacePicker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZXPlacePicker.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZXPlacePicker/Pods-ZXPlacePicker.release.xcconfig"; sourceTree = "<group>"; };
+		D51A04278CD93B0CD0A8765E /* Pods_ZXPlacePicker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZXPlacePicker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		4C94AD171F380C54005AE554 /* Frameworks */ = {
+		4C9AB3211F18AD260016B661 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C22BE031F2AD09800EB2988 /* MapKit.framework in Frameworks */,
+				96CF722C64CCF0A97B5B9852 /* Pods_ZXPlacePicker.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		4C94AD111F380C54005AE554 = {
+		4C08DBB61F18C7F0008C9588 /* ZXBase */ = {
 			isa = PBXGroup;
 			children = (
-				4C94AD1C1F380C54005AE554 /* ZXPlacePicker */,
-				4C94AD1B1F380C54005AE554 /* Products */,
+				4C08DBBA1F18C8E6008C9588 /* Lang */,
+				4C08DBD81F18CCA7008C9588 /* UIConstants.h */,
+				4C08DBD91F18CCA7008C9588 /* UIConstants.m */,
+				4C08DBDB1F18D073008C9588 /* DrawUtils.h */,
+				4C08DBDC1F18D073008C9588 /* DrawUtils.m */,
+				4C08DBB71F18C817008C9588 /* UIToolkit.h */,
+				4C08DBB81F18C817008C9588 /* UIToolkit.m */,
+			);
+			path = ZXBase;
+			sourceTree = "<group>";
+		};
+		4C08DBBA1F18C8E6008C9588 /* Lang */ = {
+			isa = PBXGroup;
+			children = (
+				4C08DBC61F18C8E6008C9588 /* Time */,
+				4C08DBBB1F18C8E6008C9588 /* ArrayUtils.h */,
+				4C08DBBC1F18C8E6008C9588 /* ArrayUtils.m */,
+				4C08DBBD1F18C8E6008C9588 /* Lang.h */,
+				4C08DBBE1F18C8E6008C9588 /* RandomStringUtils.h */,
+				4C08DBBF1F18C8E6008C9588 /* RandomStringUtils.m */,
+				4C08DBC21F18C8E6008C9588 /* StringUtils.h */,
+				4C08DBC31F18C8E6008C9588 /* StringUtils.m */,
+				4C08DBDE1F18D2B2008C9588 /* UIColor+Crayons.h */,
+				4C08DBDF1F18D2B2008C9588 /* UIColor+Crayons.m */,
+				4C08DBC41F18C8E6008C9588 /* SystemUtils.h */,
+				4C08DBC51F18C8E6008C9588 /* SystemUtils.m */,
+			);
+			path = Lang;
+			sourceTree = "<group>";
+		};
+		4C08DBC61F18C8E6008C9588 /* Time */ = {
+			isa = PBXGroup;
+			children = (
+				4C08DBC71F18C8E6008C9588 /* DateFormatUtils.h */,
+				4C08DBC81F18C8E6008C9588 /* DateFormatUtils.m */,
+				4C08DBC91F18C8E6008C9588 /* DateUtils.h */,
+				4C08DBCA1F18C8E6008C9588 /* DateUtils.m */,
+				4C08DBCB1F18C8E6008C9588 /* FastDateFormat.h */,
+				4C08DBCC1F18C8E6008C9588 /* FastDateFormat.m */,
+			);
+			path = Time;
+			sourceTree = "<group>";
+		};
+		4C2633C41F2ED20E00EDAB2B /* Mode */ = {
+			isa = PBXGroup;
+			children = (
+				4C2633C81F2ED29700EDAB2B /* GoogleNearbySearchResult.h */,
+				4C2633C91F2ED29700EDAB2B /* GoogleNearbySearchResult.m */,
+			);
+			path = Mode;
+			sourceTree = "<group>";
+		};
+		4C2633CB1F2ED54400EDAB2B /* WebService */ = {
+			isa = PBXGroup;
+			children = (
+				4C2633CC1F2ED59400EDAB2B /* GoogleAPIWebService.h */,
+				4C2633CD1F2ED59400EDAB2B /* GoogleAPIWebService.m */,
+			);
+			path = WebService;
+			sourceTree = "<group>";
+		};
+		4C9AB31B1F18AD260016B661 = {
+			isa = PBXGroup;
+			children = (
+				4C9AB3261F18AD260016B661 /* ZXPlacePicker */,
+				4C9AB3251F18AD260016B661 /* Products */,
+				D4C46FCC50B3B35761C2C9FC /* Pods */,
+				BE97EBCE836A6DD572680A4B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
-		4C94AD1B1F380C54005AE554 /* Products */ = {
+		4C9AB3251F18AD260016B661 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				4C94AD1A1F380C54005AE554 /* ZXPlacePicker.app */,
+				4C9AB3241F18AD260016B661 /* ZXPlacePicker.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		4C94AD1C1F380C54005AE554 /* ZXPlacePicker */ = {
+		4C9AB3261F18AD260016B661 /* ZXPlacePicker */ = {
 			isa = PBXGroup;
 			children = (
-				4C94AD201F380C54005AE554 /* AppDelegate.h */,
-				4C94AD211F380C54005AE554 /* AppDelegate.m */,
-				4C94AD231F380C54005AE554 /* ViewController.h */,
-				4C94AD241F380C54005AE554 /* ViewController.m */,
-				4C94AD261F380C54005AE554 /* Main.storyboard */,
-				4C94AD291F380C54005AE554 /* Assets.xcassets */,
-				4C94AD2B1F380C54005AE554 /* LaunchScreen.storyboard */,
-				4C94AD2E1F380C54005AE554 /* Info.plist */,
-				4C94AD1D1F380C54005AE554 /* Supporting Files */,
+				4C08DBB61F18C7F0008C9588 /* ZXBase */,
+				4C2633CB1F2ED54400EDAB2B /* WebService */,
+				4C2633C41F2ED20E00EDAB2B /* Mode */,
+				4C9AB32A1F18AD260016B661 /* AppDelegate.h */,
+				4C9AB32B1F18AD260016B661 /* AppDelegate.m */,
+				4C9AB32D1F18AD260016B661 /* ViewController.h */,
+				4C9AB32E1F18AD260016B661 /* ViewController.m */,
+				4C2633CF1F2ED6CB00EDAB2B /* GoogleNearbySearchResultJsonMapper.h */,
+				4C2633D01F2ED6CB00EDAB2B /* GoogleNearbySearchResultJsonMapper.m */,
+				4C08DBB11F18C4C9008C9588 /* ZXPlacePickerViewController.h */,
+				4C08DBB21F18C4C9008C9588 /* ZXPlacePickerViewController.m */,
+				4C08DBB31F18C4C9008C9588 /* ZXPlacePickerViewController.xib */,
+				4C9AB3301F18AD260016B661 /* Main.storyboard */,
+				4C9AB3331F18AD260016B661 /* Assets.xcassets */,
+				4C9AB3351F18AD260016B661 /* LaunchScreen.storyboard */,
+				4C9AB3381F18AD260016B661 /* Info.plist */,
+				4C9AB3271F18AD260016B661 /* Supporting Files */,
 			);
 			path = ZXPlacePicker;
 			sourceTree = "<group>";
 		};
-		4C94AD1D1F380C54005AE554 /* Supporting Files */ = {
+		4C9AB3271F18AD260016B661 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				4C94AD1E1F380C54005AE554 /* main.m */,
+				4C9AB3281F18AD260016B661 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BE97EBCE836A6DD572680A4B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4C22BE021F2AD09800EB2988 /* MapKit.framework */,
+				D51A04278CD93B0CD0A8765E /* Pods_ZXPlacePicker.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D4C46FCC50B3B35761C2C9FC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3B22F410347DDBC43BCC8AC5 /* Pods-ZXPlacePicker.debug.xcconfig */,
+				8FB11C7BAD27F737B4D15A4B /* Pods-ZXPlacePicker.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		4C94AD191F380C54005AE554 /* ZXPlacePicker */ = {
+		4C9AB3231F18AD260016B661 /* ZXPlacePicker */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4C94AD311F380C54005AE554 /* Build configuration list for PBXNativeTarget "ZXPlacePicker" */;
+			buildConfigurationList = 4C9AB33B1F18AD260016B661 /* Build configuration list for PBXNativeTarget "ZXPlacePicker" */;
 			buildPhases = (
-				4C94AD161F380C54005AE554 /* Sources */,
-				4C94AD171F380C54005AE554 /* Frameworks */,
-				4C94AD181F380C54005AE554 /* Resources */,
+				C2B03287A194992F6077B947 /* [CP] Check Pods Manifest.lock */,
+				4C9AB3201F18AD260016B661 /* Sources */,
+				4C9AB3211F18AD260016B661 /* Frameworks */,
+				4C9AB3221F18AD260016B661 /* Resources */,
+				0D1E4355C55084FC3D360791 /* [CP] Embed Pods Frameworks */,
+				EA2F91E2CD0C6BDF665D46DE /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -96,25 +247,30 @@
 			);
 			name = ZXPlacePicker;
 			productName = ZXPlacePicker;
-			productReference = 4C94AD1A1F380C54005AE554 /* ZXPlacePicker.app */;
+			productReference = 4C9AB3241F18AD260016B661 /* ZXPlacePicker.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		4C94AD121F380C54005AE554 /* Project object */ = {
+		4C9AB31C1F18AD260016B661 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0830;
+				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = ziv;
 				TargetAttributes = {
-					4C94AD191F380C54005AE554 = {
-						CreatedOnToolsVersion = 8.3.3;
-						ProvisioningStyle = Automatic;
+					4C9AB3231F18AD260016B661 = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = GQZ662688R;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 0;
+							};
+						};
 					};
 				};
 			};
-			buildConfigurationList = 4C94AD151F380C54005AE554 /* Build configuration list for PBXProject "ZXPlacePicker" */;
+			buildConfigurationList = 4C9AB31F1F18AD260016B661 /* Build configuration list for PBXProject "ZXPlacePicker" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -122,55 +278,119 @@
 				en,
 				Base,
 			);
-			mainGroup = 4C94AD111F380C54005AE554;
-			productRefGroup = 4C94AD1B1F380C54005AE554 /* Products */;
+			mainGroup = 4C9AB31B1F18AD260016B661;
+			productRefGroup = 4C9AB3251F18AD260016B661 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				4C94AD191F380C54005AE554 /* ZXPlacePicker */,
+				4C9AB3231F18AD260016B661 /* ZXPlacePicker */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		4C94AD181F380C54005AE554 /* Resources */ = {
+		4C9AB3221F18AD260016B661 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4C94AD2D1F380C54005AE554 /* LaunchScreen.storyboard in Resources */,
-				4C94AD2A1F380C54005AE554 /* Assets.xcassets in Resources */,
-				4C94AD281F380C54005AE554 /* Main.storyboard in Resources */,
+				4C9AB3371F18AD260016B661 /* LaunchScreen.storyboard in Resources */,
+				4C08DBB51F18C4C9008C9588 /* ZXPlacePickerViewController.xib in Resources */,
+				4C9AB3341F18AD260016B661 /* Assets.xcassets in Resources */,
+				4C9AB3321F18AD260016B661 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0D1E4355C55084FC3D360791 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ZXPlacePicker/Pods-ZXPlacePicker-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C2B03287A194992F6077B947 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		EA2F91E2CD0C6BDF665D46DE /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ZXPlacePicker/Pods-ZXPlacePicker-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
-		4C94AD161F380C54005AE554 /* Sources */ = {
+		4C9AB3201F18AD260016B661 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4C94AD251F380C54005AE554 /* ViewController.m in Sources */,
-				4C94AD221F380C54005AE554 /* AppDelegate.m in Sources */,
-				4C94AD1F1F380C54005AE554 /* main.m in Sources */,
+				4C9AB32F1F18AD260016B661 /* ViewController.m in Sources */,
+				4C2633D11F2ED6CB00EDAB2B /* GoogleNearbySearchResultJsonMapper.m in Sources */,
+				4C08DBE01F18D2B2008C9588 /* UIColor+Crayons.m in Sources */,
+				4C08DBDA1F18CCA7008C9588 /* UIConstants.m in Sources */,
+				4C08DBD41F18C8E6008C9588 /* FastDateFormat.m in Sources */,
+				4C08DBDD1F18D073008C9588 /* DrawUtils.m in Sources */,
+				4C08DBD31F18C8E6008C9588 /* DateUtils.m in Sources */,
+				4C08DBD21F18C8E6008C9588 /* DateFormatUtils.m in Sources */,
+				4C08DBD01F18C8E6008C9588 /* StringUtils.m in Sources */,
+				4C2633CA1F2ED29700EDAB2B /* GoogleNearbySearchResult.m in Sources */,
+				4C08DBB91F18C817008C9588 /* UIToolkit.m in Sources */,
+				4C08DBB41F18C4C9008C9588 /* ZXPlacePickerViewController.m in Sources */,
+				4C2633CE1F2ED59400EDAB2B /* GoogleAPIWebService.m in Sources */,
+				4C08DBD11F18C8E6008C9588 /* SystemUtils.m in Sources */,
+				4C08DBCD1F18C8E6008C9588 /* ArrayUtils.m in Sources */,
+				4C9AB32C1F18AD260016B661 /* AppDelegate.m in Sources */,
+				4C9AB3291F18AD260016B661 /* main.m in Sources */,
+				4C08DBCE1F18C8E6008C9588 /* RandomStringUtils.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		4C94AD261F380C54005AE554 /* Main.storyboard */ = {
+		4C9AB3301F18AD260016B661 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				4C94AD271F380C54005AE554 /* Base */,
+				4C9AB3311F18AD260016B661 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		4C94AD2B1F380C54005AE554 /* LaunchScreen.storyboard */ = {
+		4C9AB3351F18AD260016B661 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				4C94AD2C1F380C54005AE554 /* Base */,
+				4C9AB3361F18AD260016B661 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -178,12 +398,11 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		4C94AD2F1F380C54005AE554 /* Debug */ = {
+		4C9AB3391F18AD260016B661 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -191,13 +410,10 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -219,19 +435,18 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
 		};
-		4C94AD301F380C54005AE554 /* Release */ = {
+		4C9AB33A1F18AD260016B661 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -239,13 +454,10 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -261,29 +473,35 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
-		4C94AD321F380C54005AE554 /* Debug */ = {
+		4C9AB33C1F18AD260016B661 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3B22F410347DDBC43BCC8AC5 /* Pods-ZXPlacePicker.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = GQZ662688R;
 				INFOPLIST_FILE = ZXPlacePicker/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ziv.ZXPlacePicker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
 		};
-		4C94AD331F380C54005AE554 /* Release */ = {
+		4C9AB33D1F18AD260016B661 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8FB11C7BAD27F737B4D15A4B /* Pods-ZXPlacePicker.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = GQZ662688R;
 				INFOPLIST_FILE = ZXPlacePicker/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ziv.ZXPlacePicker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -293,24 +511,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		4C94AD151F380C54005AE554 /* Build configuration list for PBXProject "ZXPlacePicker" */ = {
+		4C9AB31F1F18AD260016B661 /* Build configuration list for PBXProject "ZXPlacePicker" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				4C94AD2F1F380C54005AE554 /* Debug */,
-				4C94AD301F380C54005AE554 /* Release */,
+				4C9AB3391F18AD260016B661 /* Debug */,
+				4C9AB33A1F18AD260016B661 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4C94AD311F380C54005AE554 /* Build configuration list for PBXNativeTarget "ZXPlacePicker" */ = {
+		4C9AB33B1F18AD260016B661 /* Build configuration list for PBXNativeTarget "ZXPlacePicker" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				4C94AD321F380C54005AE554 /* Debug */,
-				4C94AD331F380C54005AE554 /* Release */,
+				4C9AB33C1F18AD260016B661 /* Debug */,
+				4C9AB33D1F18AD260016B661 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 4C94AD121F380C54005AE554 /* Project object */;
+	rootObject = 4C9AB31C1F18AD260016B661 /* Project object */;
 }

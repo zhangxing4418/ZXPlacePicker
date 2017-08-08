@@ -12,6 +12,7 @@
 @interface GoogleNearbySearchResult : NSObject
 @property (nonatomic, assign) CGFloat latitude;
 @property (nonatomic, assign) CGFloat longitude;
+@property (nonatomic, assign) CGFloat distance;
 @property (nonatomic, strong) NSString *name;
 @property (nonatomic, strong) NSString *placeId;
 @property (nonatomic, strong) NSString *vicinity;

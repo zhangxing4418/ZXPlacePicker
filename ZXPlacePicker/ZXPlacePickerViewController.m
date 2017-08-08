@@ -11,6 +11,7 @@
 @import GooglePlaces;
 @import MapKit;
 #import "Lang.h"
+#import "CocoaUtils.h"
 #import "UIConstants.h"
 #import "UIToolKit.h"
 #import "GoogleNearbySearchResult.h"
@@ -147,8 +148,16 @@ typedef NS_ENUM (NSUInteger, FloatViewMode) {
 			GoogleNearbySearchResponse *response = mapper.response;
 			if (response.results.count > 0) {
 				if (completed) {
-					// sort
-					completed(response.results);
+                    for (GoogleNearbySearchResult* result in response.results) {
+                        result.distance = [CocoaUtils distanceFromCoordinate:CLLocationCoordinate2DMake(result.latitude, result.longitude) toCoordinate:coordinate];
+                    }
+                    // sort
+                    completed([response.results sortedArrayUsingComparator:^NSComparisonResult(GoogleNearbySearchResult*  _Nonnull obj1, GoogleNearbySearchResult*  _Nonnull obj2) {
+                        if (obj1.distance < obj2.distance) {
+                            return NSOrderedAscending;
+                        }
+                        return NSOrderedDescending;
+                    }]);
 				}
 			}
 		}
@@ -200,7 +209,7 @@ typedef NS_ENUM (NSUInteger, FloatViewMode) {
 	for (GoogleNearbySearchResult *result in results) {
 		TableViewCellData *data = [[TableViewCellData alloc] init];
 		data.style = UITableViewCellStyleSubtitle;
-		data.text = result.name;
+		data.text = [result.name stringByAppendingString:[NSString stringWithFormat:@" (%.6lf)", result.distance]];
 		data.textFont = [UIFont preferredFontForTextStyle:UIFontTextStyleCallout];
 		data.detailText = result.vicinity;
 		data.detailTextFont = [UIFont preferredFontForTextStyle:UIFontTextStyleCaption2];

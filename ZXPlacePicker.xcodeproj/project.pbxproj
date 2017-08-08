@@ -30,6 +30,7 @@
 		4C9AB3321F18AD260016B661 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C9AB3301F18AD260016B661 /* Main.storyboard */; };
 		4C9AB3341F18AD260016B661 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C9AB3331F18AD260016B661 /* Assets.xcassets */; };
 		4C9AB3371F18AD260016B661 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C9AB3351F18AD260016B661 /* LaunchScreen.storyboard */; };
+		4CC4A02E1F39B6510086E167 /* CocoaUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CC4A02D1F39B6510086E167 /* CocoaUtils.m */; };
 		96CF722C64CCF0A97B5B9852 /* Pods_ZXPlacePicker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D51A04278CD93B0CD0A8765E /* Pods_ZXPlacePicker.framework */; };
 /* End PBXBuildFile section */
 
@@ -78,6 +79,8 @@
 		4C9AB3331F18AD260016B661 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4C9AB3361F18AD260016B661 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4C9AB3381F18AD260016B661 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4CC4A02C1F39B6510086E167 /* CocoaUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CocoaUtils.h; sourceTree = "<group>"; };
+		4CC4A02D1F39B6510086E167 /* CocoaUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CocoaUtils.m; sourceTree = "<group>"; };
 		8FB11C7BAD27F737B4D15A4B /* Pods-ZXPlacePicker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZXPlacePicker.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZXPlacePicker/Pods-ZXPlacePicker.release.xcconfig"; sourceTree = "<group>"; };
 		D51A04278CD93B0CD0A8765E /* Pods_ZXPlacePicker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZXPlacePicker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -99,6 +102,8 @@
 			isa = PBXGroup;
 			children = (
 				4C08DBBA1F18C8E6008C9588 /* Lang */,
+				4CC4A02C1F39B6510086E167 /* CocoaUtils.h */,
+				4CC4A02D1F39B6510086E167 /* CocoaUtils.m */,
 				4C08DBD81F18CCA7008C9588 /* UIConstants.h */,
 				4C08DBD91F18CCA7008C9588 /* UIConstants.m */,
 				4C08DBDB1F18D073008C9588 /* DrawUtils.h */,
@@ -372,6 +377,7 @@
 				4C08DBCD1F18C8E6008C9588 /* ArrayUtils.m in Sources */,
 				4C9AB32C1F18AD260016B661 /* AppDelegate.m in Sources */,
 				4C9AB3291F18AD260016B661 /* main.m in Sources */,
+				4CC4A02E1F39B6510086E167 /* CocoaUtils.m in Sources */,
 				4C08DBCE1F18C8E6008C9588 /* RandomStringUtils.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

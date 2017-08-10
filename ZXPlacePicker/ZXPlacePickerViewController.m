@@ -93,7 +93,6 @@ typedef NS_ENUM (NSUInteger, FloatViewMode) {
 		resultsViewController.delegate = self;
 
 		self.searchController = [[UISearchController alloc] initWithSearchResultsController:resultsViewController];
-// self.searchController.searchBar.autoresizingMask = UIViewAutoresizingFlexibleWidth;
 		self.searchController.searchBar.searchBarStyle = UISearchBarStyleDefault;
 		[self.searchController.searchBar sizeToFit];
 		[self.view addSubview:self.searchController.searchBar];
@@ -103,6 +102,9 @@ typedef NS_ENUM (NSUInteger, FloatViewMode) {
 	if (YES) {
 		self.mapView.userTrackingMode = MKUserTrackingModeFollow;
 		self.mapView.showsCompass = NO;
+        self.mapView.showsPointsOfInterest = YES;
+        self.mapView.showsBuildings = YES;
+        self.mapView.showsTraffic = YES;
 	}
 	[self.tableView reloadData];
 	[self configureOtherViews];
